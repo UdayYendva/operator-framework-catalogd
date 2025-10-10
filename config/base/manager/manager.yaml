@@ -47,6 +47,8 @@ spec:
                     - linux
       securityContext:
         runAsNonRoot: true
+        seLinuxOptions:
+          type: spc_t
         seccompProfile:
           type: RuntimeDefault
       containers:
